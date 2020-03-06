@@ -13,21 +13,14 @@ export default new Router({
     {
       path: '/goods',
       name: 'GoodsList',
-      component: GoodsList,
-      children:[
-        {
-          path: 'title',
-          name: 'title',
-          component:Title
-        },
-        {
-          path: 'img',
-          name: 'img',
-          component:Image
-        }
-        ]},
+      components: {
+        default:GoodsList,
+        title:Title,
+        img:Image
+      },
+      },
   {
-      path: '/cart',
+      path: '/cart/:cartid',
       name: 'cart',
       component:Cart
         }

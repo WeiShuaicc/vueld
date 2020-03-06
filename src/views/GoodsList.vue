@@ -9,8 +9,7 @@
     <div>
     <router-view></router-view>
     </div>
-    <router-link to="/cart">跳转到购物车页面</router-link>
-    <button @click="jump">button - 跳转到购物车页面</button>
+    <router-link v-bind:to="{name:'cart',params:{cartid:134}}">跳转到购物车页面</router-link>
   </div>
 </template>
 <style></style>
