@@ -16,6 +16,36 @@
     console.log(`total: ${total}`);
   }
   sum(5,1,9)
+  function sum2(...m){
+    let total = 0;
+    for(var i of m){
+      total +=i;
+
+    }
+    console.log(`total2:${total}`)
+  }
+  sum2(2,4,5,6,2);
+
+  let sum3 = (...m)=>{
+    let total = 0;
+    for(var i of m){
+      total +=i;
+
+    }
+    console.log(`total2:${total}`)
+  }
+  sum3(2,6,5)
+
+
+  console.log(...[3,5])
+  let arr1 = [1,3]; let arr2 = [3,5]
+  console.log([...arr1,...arr2])
+
+  var  [x,...y] = [4,8,10,30]
+  console.log()
+  let [a,b,c] = "ES6"
+
+  let xy = [...'ES6']
 </script>
 
 </body>
