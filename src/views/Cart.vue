@@ -179,12 +179,12 @@
       }
     },
     mounted(){
-      this.init();
+      this.init(); //init()初始化调用    axios.post("/users/cartDel",....)
     },
     filters:{
       currency:currency
     },
-    computed:{
+    computed:{  //实时计算
       checkAllFlag(){
         return this.checkedCount == this.cartList.length;
       },
@@ -199,7 +199,7 @@
         var money = 0;
         this.cartList.forEach((item)=>{
           if(item.checked=='1'){
-            money += parseFloat(item.salePrice)*parseInt(item.productNum);
+            money += parseFloat(item.salePrice)*parseInt(item.productNum);//总金额
           }
         })
         return money;
@@ -221,7 +221,7 @@
       closeModal(){
         this.modalConfirm = false;
       },
-      delCartConfirm(item){
+      delCartConfirm(item){   //全局保存
         this.delItem = item;
         this.modalConfirm = true;
       },
