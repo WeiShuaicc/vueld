@@ -130,7 +130,7 @@
                 }
               }else{
                 this.goodsList = res.result.list;
-                this.busy = false;
+                this.busy = false;//初始启用滑动加载
               }
             }else{
               this.goodsList = [];
