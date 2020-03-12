@@ -31,7 +31,7 @@
         },
         methods:{
           closeModal(){
-            this.$emit("close");
+            this.$emit("close");//触发close事件
           }
         }
     }
