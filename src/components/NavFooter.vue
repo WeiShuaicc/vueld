@@ -11,7 +11,7 @@
             </select>
           </div>
           <div class="footer__secondary__nav">
-            <span>Copyright © 2017 IMooc All Rights Reserved.</span>
+            <span>Copyright © 2017 IKlAll Rights Reserved.</span>
             <a href="#">
               About Us
             </a>
